@@ -1,0 +1,23 @@
+.single-news-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  max-height: 80vh;
+  margin: 0 auto;
+  background: white;
+  border-radius: 2rem;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+.single-news-text {
+  margin-top: 2rem;
+}
+
+.single-news-link {
+  margin-top: 1rem;
+}

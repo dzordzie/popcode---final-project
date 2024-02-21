@@ -1,0 +1,42 @@
+name: Build and Check style on Pull Request
+
+on:
+  pull_request:
+    branches:
+      - development
+
+jobs:
+
+  checkstyleMain:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+          cache: gradle
+
+      - name: Run checkstyleMain
+        run: gradle checkstyleMain
+
+  checkstyleTest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+          cache: gradle
+
+      - name: Run checkstyleTest
+        run: gradle checkstyleTest

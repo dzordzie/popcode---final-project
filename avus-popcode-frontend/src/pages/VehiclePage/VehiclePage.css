@@ -1,0 +1,9 @@
+.rent-btn {
+  min-width: 50px;
+  width: 40%;
+  padding: 3% 0;
+  border: none;
+  background-color: var(--primary-sage);
+  border-radius: 15px;
+  margin: auto;
+}

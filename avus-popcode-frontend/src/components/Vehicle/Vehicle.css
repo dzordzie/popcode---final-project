@@ -1,0 +1,23 @@
+.vehicle {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 50px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-img {
+  aspect-ratio: 1 / 1;
+  border-radius: 50px;
+  margin: 5px;
+  height: auto;
+  object-fit: contain;
+}
+
+.vehicle-information {
+  width: 100%;
+  text-align: left;
+}
